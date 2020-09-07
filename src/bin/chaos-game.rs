@@ -6,8 +6,12 @@
 /// ### Generating the fractal
 /// The following will write the points of a sierpinski triangle to plots/sierpinski-triangle.txt
 /// `chaos-game sierpinski-triangle > plots/sierpinski-triangle.txt`
+///
 /// ### Viewing the fractal with gnuplot
 /// `plot 'plots/sierpinski-triangle.txt' with points`
+///
+/// ### Animation of the fractal with gnuplot
+/// `do for [i=0;1000000] { plot 'plots/vicsek.txt' every ::0::i }`
 use rand::seq::SliceRandom;
 
 #[derive(Debug, Copy, Clone, PartialEq)]
